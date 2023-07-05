@@ -48,6 +48,9 @@ class Soliq:
                         x[5]=new_password
         self.__bosh_menyu()
 
+class hi:
+    print("Hi")
 
+a=hi()
 k=Soliq()
 k.royxatdan_otish()
