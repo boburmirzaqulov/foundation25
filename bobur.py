@@ -3,5 +3,3 @@ def calculate(year):
 
 
 calculate(input("Enter your birth year: "))
-
-print("End coding")
