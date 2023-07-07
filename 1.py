@@ -1,8 +1,8 @@
 import os
-from PyQt5.QtCore import *
+import sys
+
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-import sys
 
 os.system("cls")
 
@@ -13,7 +13,7 @@ class calculate(QMainWindow):
         self.setMinimumSize(290, 500)
         self.setMaximumSize(290, 500)
         self.setWindowTitle("Calculator")
-        self.setWindowIcon(QIcon("c:\\Users\\Acer\\Desktop\\Foundation\\Iphone.ico"))
+        self.setWindowIcon(QIcon(os.getcwd() + "\\resource\\Iphone.ico"))
         self.setStyleSheet("background-color: rgb(28,28,28)")
         # Button C
         bcc = QPushButton("C", self)
