@@ -1,9 +1,12 @@
 import os
 import sys
-from PyQt5.QtCore import *
+
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
+
 os.system("cls")
+
+
 class calculate(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -13,7 +16,7 @@ class calculate(QMainWindow):
         self.setWindowIcon(QIcon(os.getcwd() + "\\resource\\Iphone.ico"))
         self.setStyleSheet("background-color: rgb(28,28,28)")
         # Button C
-        bcc = QPushButton("C ", self)
+        bcc = QPushButton("C", self)
         bcc.setGeometry(10, 150, 60, 60)
         bcc.setFont(QFont("Microsoft Sans Serif", 18))
         bcc.setStyleSheet("background-color: rgb(212,212,210);color: rgb(28,28,28);border-radius:30px")
@@ -83,7 +86,7 @@ class calculate(QMainWindow):
         bcq.setStyleSheet("background-color: rgb(255,146,0);color: rgb(212,212,210);border-radius: 30px")
         bcq.clicked.connect(self.calcul)
         # Button 0
-        bc0 = QPushButton("0        ", self)
+        bc0 = QPushButton("0", self)
         bc0.setGeometry(10, 430, 130, 60)
         bc0.setFont(QFont("Arial", 18))
         bc0.setStyleSheet("background-color: rgb(85,85,85);color: rgb(212,212,210);border-radius: 28px")
@@ -103,8 +106,6 @@ class calculate(QMainWindow):
 
     def calcul(self):
         print("Salom")
-    
-    
 
     def initBtnNum(self, n):
         bc = QPushButton(n, self)
@@ -112,8 +113,6 @@ class calculate(QMainWindow):
         bc.setStyleSheet("background-color: rgb(85,85,85);color: rgb(212,212,210);border-radius: 30px")
         bc.clicked.connect(self.calcul)
         return bc
-    def initBtnchar(self,n):
-
 
 
 app = QApplication(sys.argv)
